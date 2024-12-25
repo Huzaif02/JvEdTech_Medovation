@@ -21,9 +21,8 @@ const Service = () => {
             <div className="section-header">
               <h2>
                 We are a
-                <span style={{ color: "#155bd5" }}> GLOBAL LEADER</span> in
-                Telcom VAS, offer Services across Educational Content,
-                Entertainment Content, Games and sports
+                <span style={{ color: "#155bd5" }}> Spearheading</span> in
+                Healthcare domain, by offer Services across Education, Patient Care, Digital Advertisement, medical product import export, etc.
               </h2>
             </div>
 
@@ -53,30 +52,20 @@ const Service = () => {
                   <i className="bi bi-book" style={{ color: "#f57813" }}></i>
                 </div>
                 <div>
-                  <h4 className="title"> Educational Content </h4>
+                  <h4 className="title"> EduGlobe </h4>
                   <p className="description">
                     
-                    Education is the key to unlocking the golden door of
-                    freedom. Educational content are crucial as it is an
-                    investment in human capital that yields tremendous benefits
-                    to personal, social and economic development.
+                  Our Educational Services are designed to empower healthcare professionals with the knowledge and skills they need to excel in a constantly evolving industry. We offer:
+
+                  <p><span className="fw-bold">Customized Training Programs:</span></p>Tailored to meet the specific needs of healthcare providers, institutions, and organizations.
+                  <p><span className="fw-bold">Workshops and Seminars:</span></p> Focused on the latest trends and advancements in healthcare.
+                  <p><span className="fw-bold">eLearning Modules:</span></p> Interactive, online learning tools for flexible and accessible education.
+                  <p><span className="fw-bold">Skill Development:</span></p> Hands-on training in critical areas like patient care, technology integration, and regulatory compliance.
+                  
                   </p>
                   <p className="description">
-                    Our Educational Content spans K-12, Engineering across all
-                    disciplines, Soft skills, Skill Development, Vocational,
-                    Applied Sciences, Humanities .. etc.
-                  </p>
-                  <p className="description">
-                    
-                    we have Animated tutorials, offers practice exercises,
-                    Assessments, LIVE Tutor
-                  </p>
-                  <p className="description">
-                    
                     <span className="fw-bold">
-                      K-12 Covers Maths, EVS, English, Physics, Chemistry,
-                      Biology, Skill Development covers Automobile, Civil,
-                      Electrical, Tailoring, Mobile Repair
+                    At JVEDTECH, we ensure healthcare professionals are equipped to deliver exceptional care in an ever-changing environment.
                     </span>
                     and more..
                   </p>
@@ -101,21 +90,18 @@ const Service = () => {
                   ></i>
                 </div>
                 <div>
-                  <h4 className="title"> Entertainment Content </h4>
+                  <h4 className="title"> In-Home Wellness </h4>
                   <p className="description">
-                    Our Entertainment content can keep the consumer engaged for
-                    hours if that’s what one is interested in. We have an
-                    impressive array of
-                    <span className="fw-bold">
-                      
-                      Content on Movies, Fashion, on Demand Videos
-                    </span>
-                    and many more...
+                    Our In-Home Wellness services redefine patient care by bringing top-notch medical services to the comfort of patients' homes. We provide:  
+                    <p><span className="fw-bold">Home Health Monitoring: </span></p>Continuous tracking of health metrics with advanced technology.
+                    <p><span className="fw-bold">Nursing and Caregiver Services:</span></p> Skilled professionals delivering personalized care tailored to individual needs.
+                    <p><span className="fw-bold">Rehabilitation Therapy:</span></p> Physical, occupational, and speech therapy sessions conducted at home.
+                    <p><span className="fw-bold">Medication Management:</span></p> Ensuring patients adhere to their prescribed treatments with guidance and support.
                   </p>
                   <p className="description">
-                    
-                    So every time a consumer needs enthralling content, ours is
-                    the way to go.
+                    <span className="fw-bold">
+                    By prioritizing convenience and comfort, we strive to make healthcare more accessible and patient-centric.
+                    </span>
                   </p>
                 </div>
               </div>
@@ -154,16 +140,18 @@ const Service = () => {
                   ></i>
                 </div>
                 <div>
-                  <h4 className="title"> Games </h4>
+                  <h4 className="title"> Digital Ads Pro Expertise </h4>
                   <p className="description">
-                    Get access to a bunch of games ranging from Action,
-                    Adventure, Arcade, Board, Cards, Casino ... and many to play
-                    on your device.
+                  Our Digital Ads Pro Expertise focuses on revolutionizing healthcare marketing by implementing innovative digital strategies. We specialize in:
+                    <p><span className="fw-bold">Targeted Campaigns: </span></p>Reaching the right audience with personalized healthcare messaging.
+                    <p><span className="fw-bold">Social Media Management:</span></p> Engaging patients and stakeholders through impactful social media campaigns.
+                    <p><span className="fw-bold">Pay-Per-Click (PPC) Advertising: </span></p> Driving traffic and conversions with effective ad placements.
+                    <p><span className="fw-bold">Content Marketing:</span></p> Creating informative, high-quality content tailored to the healthcare industry.
                   </p>
                   <p className="description">
-                    If obvious choice for people whose idea of entertainment
-                    involves gaming as one would with a console or a computer,
-                    then their search stops here.
+                    <span className="fw-bold">
+                    We combine data-driven strategies with creative execution to help healthcare businesses expand their reach and improve accessibility.
+                    </span>
                   </p>
                 </div>
               </div>
@@ -186,14 +174,18 @@ const Service = () => {
                   ></i>
                 </div>
                 <div>
-                  <h4 className="title"> Sports </h4>
+                  <h4 className="title"> Medi AI Informatics </h4>
                   <p className="description">
-                    Learning a sport is fun and challenging... sports like
-                    football, cricket, Tennis, Badminton, Rugby, volleyball and
-                    many more as such has tutoring videos talks about the
-                    history of the game, rules, knack to learn, skills to
-                    develop, details about the sport... so why to wait, let’s
-                    play the sport...
+                  Our Medi AI Informatics services harness the power of Artificial Intelligence to transform the healthcare landscape. We offer:
+                    <p><span className="fw-bold">AI-Powered Diagnostics: </span></p>Enabling faster and more accurate disease detection
+                    <p><span className="fw-bold">Natural Language Processing (NLP):</span></p> Streamlining patient communication and record-keeping.
+                    <p><span className="fw-bold">Remote Patient Monitoring:  </span></p> Using AI tools to track health metrics and alert caregivers.
+                    <p><span className="fw-bold">Decision Support Systems: </span></p>  Empowering healthcare providers with data-driven insights for better decision-making.
+                  </p>
+                  <p className="description">
+                    <span className="fw-bold">
+                    With Medi AI Informatics, we aim to enhance operational efficiency, improve patient outcomes, and drive innovation in the healthcare sector.
+                    </span>
                   </p>
                 </div>
               </div>

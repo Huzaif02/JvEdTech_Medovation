@@ -1,5 +1,6 @@
 import React from "react";
-import footerLogo from '../img/sym-logo.svg'
+import footerLogo from "../img/jvlogo.jpg";
+
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -16,8 +17,7 @@ const Footer = () => {
                   <img src={footerLogo} alt="" title="" />
                 </Link>
                 <p>
-                  We are a global leader in Telcom VAS, offer Services across
-                  Educational Content, Entertainment Content, Games and sports
+                Empowering Lives with Cutting-Edge Solutions in Education, Wellness, and Technology
                 </p>
                 <div className="social-links d-flex  mt-3">
                   <Link to="/" className="twitter">
@@ -28,7 +28,7 @@ const Footer = () => {
                     <i className="bi bi-facebook"></i>
                   </Link>
                   
-                  <Link to ="https://www.linkedin.com/company/symbiotic-infotech-pvt-ltd/" className="linkedin">
+                  <Link to ="https://www.linkedin.com/company/jvedtechmedovation/" className="linkedin">
                     <i className="bi bi-linkedin"></i>
                   </Link>
                 </div>
@@ -64,22 +64,22 @@ const Footer = () => {
                   <li>
                     <i className="bi bi-dash"></i>
                     <HashLink smooth to ="/services/#Educational-content">
-                      Educational Content
+                    EduGlobe
                     </HashLink>
                   </li>
                   <li>
                     <i className="bi bi-dash"></i>
                     <HashLink smooth to ="/services/#Entertainment-content">
-                      Entertainment Content
+                    In-Home Wellness
                     </HashLink>
                   </li>
                   <li>
                     <i className="bi bi-dash"></i>
-                    <HashLink smooth to="/services/#Games">Games</HashLink>
+                    <HashLink smooth to="/services/#Games">Digital Ads Pro Expertise</HashLink>
                   </li>
                   <li>
                     <i className="bi bi-dash"></i>
-                    <HashLink smooth to ="/services/#Sports">Sports</HashLink>
+                    <HashLink smooth to ="/services/#Sports">Medi AI Informatics</HashLink>
                   </li>
                 </ul>
               </div>
@@ -87,13 +87,13 @@ const Footer = () => {
                 <h4>Contact Us</h4>
                 <address>
                  
-                  #1,Sundaram Illam, <br /> Chellamal Street, <br /> Shenoy
-                  Nagar, Chennai - 600 030. <br />
+                  A/14 Plot No.2 Suryadarsha, <br /> N CHS Mhada Colony Mind E, <br /> Mumbai
+                  , Mumbai - 400081. <br />
                   <br />
-                  <strong>Phone:</strong> +91 - 44 - 4208 2102 <br />
+                  <strong>Phone:</strong> +91 - 86556 07722 <br />
                   <strong>Email: </strong>
-                  <a href="mailto:info@symbioticinfo.com">                  
-                     info@symbioticinfo.com
+                  <a href="mailto:info@jvedtech.com">                  
+                     info@jvedtech.com
                   </a> 
                   <br />
                 </address>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </script>
               </span>
               &copy;  Copyright
-              <span> Symbiotic Infotech Pvt. Ltd </span>. All Rights Reserved
+              <span> JvEdTech Medovation Pvt. Ltd </span>. All Rights Reserved
             </div>
           </div>
         </div>

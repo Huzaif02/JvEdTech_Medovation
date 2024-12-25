@@ -9,8 +9,7 @@ const ServiceList = () => {
           <div className="section-header">
             <h2>What we do? </h2>
             <p>
-              We are a global leader in Jealthcare, offer Services across
-              Educational Content, Entertainment Content, etc{" "}
+            we bridge the gap between technology and healthcare by offering innovative solutions tailored to meet industry needs. From empowering professionals through education to delivering personalized in-home wellness services and cutting-edge digital marketing strategies, we are committed to transforming healthcare delivery and accessibility.{" "}
             </p>
           </div>
           <div className="row gy-5">
@@ -25,15 +24,13 @@ const ServiceList = () => {
                 </div>
                 <div>
                   <h4 className="title">
-                    <Link to="/ervices" className="stretched-link">
+                    <Link to="/services" className="stretched-link">
                       EduGlobe{" "}
                     </Link>
                   </h4>
                   <p className="description">
-                    Education is the key to unlocking the golden door of
-                    freedom. Educational content are crucial as it is an
-                    investment in human capital that yields tremendous benefits
-                    to personal, social and economic development...
+                  Tailored educational services designed to adapt to the evolving healthcare industry,
+                  ensuring professionals stay ahead with the latest knowledge and skills
                   </p>
                   <Link to="/services" className="btn-get-started">
                     Read More
@@ -61,7 +58,7 @@ const ServiceList = () => {
                     </Link>
                   </h4>
                   <p className="description">
-                    many more...
+                  Bringing quality medical services directly to individuals in the comfort of their homes, offering convenience and personalized care for patients.
                   </p>
                   <Link to="/services" className="btn-get-started">
                     Read More
@@ -89,7 +86,7 @@ const ServiceList = () => {
                     </Link>
                   </h4>
                   <p className="description">
-                    Get access to a bunch of one...
+                  Specialized digital marketing strategies that enhance communication and accessibility within the healthcare sector, helping businesses reach their target audience effectively.
                   </p>
                   <Link to="/services" className="btn-get-started">
                     Read More
@@ -113,11 +110,11 @@ const ServiceList = () => {
                 <div>
                   <h4 className="title">
                     <Link to="/services" className="stretched-link">
-                      import export{" "}
+                      Medi AI informatics{" "}
                     </Link>
                   </h4>
                   <p className="description">
-                    !!!!!!!learn...{" "}
+                  Medi AI Informatics services harness the power of Artificial Intelligence to transform the healthcare landscape.{" "}
                   </p>
                   <Link to="/services" className="btn-get-started">
                     Read More

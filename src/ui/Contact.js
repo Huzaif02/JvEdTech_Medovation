@@ -55,7 +55,7 @@ const Contact = () => {
     setSubmitting(true);
 
     // email configure
-    emailjs.sendForm('service_k80xoyk', 'template_q6z4pl4', form.current, 'yV95_dZd7WA5uN3f7')
+    emailjs.sendForm('service_clig6tr', 'template_xrim6nn', form.current, 'nNjoWPS79VMgU7nd-')
       .then((result) => {
           //console.log(result.text);
           //console.log("Message sent successfully")
@@ -100,12 +100,9 @@ const Contact = () => {
                     <h4>Location:</h4>
                     <h5>India:</h5>
                     <p>
-                      # 1,Sundaram Illam,Chellamal Street, <br /> Shenoy Nagar,
-                      Chennai - 600 030.
+                    A/14 Plot No.2 Suryadarsha,Chellamal Street, <br />N CHS Mhada Colony Mind E,
+                    Mumbai, <br/>Mumbai - 400081.
                     </p>
-                    <br />
-                    <h5>U.A.E:</h5>
-                    <p>P.O.Box No 95114,Abu Dhabi,UAE </p>
                   </div>
                 </div>
 
@@ -115,7 +112,7 @@ const Contact = () => {
                     <h4>Email:</h4>
                     <p>
                       <a href="mailto:info@symbioticinfo.com">
-                        info@symbioticinfo.com
+                        info@jvedtech.com
                       </a>
                     </p>
                   </div>
@@ -125,7 +122,7 @@ const Contact = () => {
                   <i className="bi bi-phone flex-shrink-0"></i>
                   <div>
                     <h4>Call:</h4>
-                    <p>+91 - 44 - 4208 2102</p>
+                    <p>+91 - 86556 07722</p>
                   </div>
                 </div>
               </div>
