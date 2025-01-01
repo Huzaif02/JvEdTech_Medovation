@@ -8,47 +8,134 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import abtHeader from '../img/about-header.jpg'
 import { useEffect } from 'react';
-import himage from '../img/team/huzaifshaikh.jpg'
 
 const About = () => {
    useEffect(() => {
       AOS.init();
       AOS.refresh();
     }, []);
-  
+    
+    const images = require.context('../img/team/', false, /\.(png|jpe?g|svg)$/);
+
+    const imagePaths = images.keys().reduce((paths, path) => {
+      const imageName = path.replace('./', ''); // Remove './' from the key
+      paths[imageName] = images(path); // Add the image to the object
+      return paths;
+    }, {});
+
     const teamMembers = [
       {
-        name: 'John Doe',
+        name: 'Dr. Jyoti Rao',
         designation: 'Co-Founder & CEO',
-        description: 'John is an experienced entrepreneur with a strong background in business development and innovation.',
+        description: 'null',
         linkedin: 'https://www.linkedin.com/in/johndoe',
         twitter: 'https://twitter.com/johndoe',
-        image: himage,
+        image: imagePaths['Jyoti.png'],
       },
       {
-        name: 'Jane Smith',
-        designation: 'CTO',
-        description: 'Jane is a tech enthusiast with over a decade of experience in software engineering and team leadership.',
+        name: 'Ms. Marilyn Olivera',
+        designation: 'Director Clinical Education and Operations',
+        description: 'null',
         linkedin: 'https://www.linkedin.com/in/janesmith',
         twitter: 'https://twitter.com/janesmith',
-        image: himage,
+        image: imagePaths['Marilyn.jpeg'],
       },
       {
-        name: 'Mark Taylor',
-        designation: 'Marketing Head',
-        description: 'Mark specializes in crafting marketing strategies that drive growth and engagement.',
+        name: 'Mr. Poornesh Shetty',
+        designation: 'Associate Director-Health and Wellbeing',
+        description: 'null',
         linkedin: 'https://www.linkedin.com/in/marktaylor',
         twitter: 'https://twitter.com/marktaylor',
-        image: himage,
+        image: imagePaths['Poornesh.jpeg'],
       },
       {
-         name: 'Mark Taylor',
-         designation: 'Marketing Head',
-         description: 'Mark specializes in crafting marketing strategies that drive growth and engagement.',
+         name: 'Mr. Dinesh Kamble',
+         designation: 'Board of Director',
+         description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
          twitter: 'https://twitter.com/marktaylor',
-         image: himage,
+         image: imagePaths['Dinesh.jpeg'],
        },
+       {
+         name: 'Mr. Pravin Nimbolkar',
+         designation: 'Board of Director',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Pravin.jpeg'],
+       },
+       {
+         name: 'Ms. Vinita Deopurkar',
+         designation: 'Associate - Clinical Education',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Vinita.jpeg'],
+       },
+       {
+         name: 'Mr. Vishnu Thangaraj',
+         designation: 'Associate - Social Media and Branding',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Vishnu.jpeg'],
+       },
+       {
+         name: 'Mr. Sajin Santhosh',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Sajin.jpeg'],
+       },
+       {
+         name: 'Mr. Abdul Sheikh',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Sajin.jpeg'],
+       },
+       {
+         name: 'Mr. Sahil Choure',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Sajin.jpeg'],
+       },
+       {
+         name: 'Mr. Huzaif Shaikh',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Huzaif.jpg'],
+       },
+       {
+         name: 'Ms. Aryaa Praseed',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Sajin.jpeg'],
+       },
+       {
+         name: 'Mr. Yash Joshi',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Sajin.jpeg'],
+       },
+       {
+         name: 'Mr. Shradha Mishra',
+         designation: 'Businesss Development Analyst',
+         description: 'null',
+         linkedin: 'https://www.linkedin.com/in/marktaylor',
+         twitter: 'https://twitter.com/marktaylor',
+         image: imagePaths['Sajin.jpeg'],
+       }
     ];
   return (
     <>

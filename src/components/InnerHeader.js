@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../img/jvlogo.jpg";
 //import Navbar from "./Navbar";
 import { useEffect } from "react";
@@ -46,13 +46,15 @@ const InnerHeader = () => {
     document.querySelector("body").classList.toggle("mobile-nav-active");
   };
 
-  
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <>
       <header id="header" className="header fixed-top">
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <Link to="/" className="logo" onClick={toTop}>
-            <img
+            <img 
+              width={120} height={80}
               src={logo}
               alt="JvEdTech Medovation"
               title="JvEdTech Medovation"
@@ -74,6 +76,34 @@ const InnerHeader = () => {
             <li>
             <Link to ="/services"  className={splitLocation[1] === "services" ? "active" : ""}> Services</Link>
             </li>
+            <li
+                        className="dropdown"
+                        onMouseEnter={() => setShowDropdown(true)}
+                        onMouseLeave={() => setShowDropdown(false)}
+                      >
+                        <Link
+                          to="/resources"
+                          className={splitLocation[1] === "resources" ? "active" : ""}
+                        >
+                          Resources <i className="bi bi-chevron-down"></i>
+                        </Link>
+                        {showDropdown && (
+                          <ul className="dropdown-menu">
+                            <li>
+                              <Link to="/resources/blogs">Blogs</Link>
+                            </li>
+                            <li>
+                              <Link to="/resources/newsletters">Newsletters</Link>
+                            </li>
+                            <li>
+                              <Link to="/resources/video-tutorials">Video Tutorials</Link>
+                            </li>
+                            <li>
+                              <Link to="/resources/case-studies">Case Studies</Link>
+                            </li>
+                          </ul>
+                        )}
+                      </li>
             <li>
             <Link to ="/careers"  className={splitLocation[1] === "careers" ? "active" : ""}> Careers</Link>
             </li>

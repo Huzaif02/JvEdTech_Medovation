@@ -376,7 +376,7 @@ section {
 }
 
 .header.sticked {
-  background: var(--primary);
+  background: #227c1de3;
   padding: 12px 0;
 }
 
@@ -627,7 +627,7 @@ section {
 .hero {
 position: relative;
     padding: 180px 0 100px 0;
-    background: var(--primary);
+    background: #227c1d;
 }
 
 .hero .shape {
