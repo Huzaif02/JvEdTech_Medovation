@@ -87,7 +87,7 @@ const Footer = () => {
                 <h4>Contact Us</h4>
                 <address>
                  
-                  A/14 Plot No.2 Suryadarsha, <br /> N CHS Mhada Colony Mind East, <br /> Mumbai
+                  A/14 Plot No.2 Suryadarsha, <br /> N CHS Mhada Colony Mulund East, <br /> Mumbai
                   , Mumbai - 400081. <br />
                   <br />
                   <strong>Phone:</strong> +91 - 86556 07722 <br />
