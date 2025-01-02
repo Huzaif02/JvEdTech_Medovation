@@ -2909,3 +2909,251 @@ padding:10px;
   font-size: 13px;
   color:  var(--dark-3);
 }
+
+/* Example CSS */
+/* General Styles */
+/* body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+} */
+
+/* Blog Cards Grid */
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Blog Card Styling */
+.blog-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.blog-card .blog-info {
+  padding: 15px;
+}
+
+.blog-card h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.blog-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.blog-card .read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.blog-card .read-more:hover {
+  background-color: #0056b3;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Blog Detail Page */
+.blog-detail-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-detail-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+  text-align: center;
+}
+
+.blog-detail-page img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.blog-detail-page p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.blog-detail-page .content {
+  margin-top: 20px;
+}
+
+.blog-detail-page .glimpses {
+  margin-top: 30px;
+}
+
+.blog-detail-page .glimpses h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.blog-detail-page .glimpses ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.blog-detail-page .glimpses li {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+/* Responsiveness for Mobile */
+@media (max-width: 768px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .blog-detail-page {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .blog-card img {
+    height: 150px;
+  }
+
+  .blog-detail-page img {
+    max-height: 250px;
+  }
+}
+
+/* Newsletter */
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-page h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Grid Layout */
+.newsletter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Card Styles */
+.newsletter-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.newsletter-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.newsletter-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.newsletter-content {
+  padding: 15px;
+}
+
+.newsletter-content h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.newsletter-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons */
+.newsletter-actions {
+  margin-top: 15px;
+}
+
+.newsletter-actions .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-actions .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .newsletter-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .newsletter-card img {
+    height: 150px;
+  }
+}

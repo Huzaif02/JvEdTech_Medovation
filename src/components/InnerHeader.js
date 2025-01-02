@@ -77,33 +77,33 @@ const InnerHeader = () => {
             <Link to ="/services"  className={splitLocation[1] === "services" ? "active" : ""}> Services</Link>
             </li>
             <li
-                        className="dropdown"
-                        onMouseEnter={() => setShowDropdown(true)}
-                        onMouseLeave={() => setShowDropdown(false)}
-                      >
-                        <Link
-                          to="/resources"
-                          className={splitLocation[1] === "resources" ? "active" : ""}
-                        >
-                          Resources <i className="bi bi-chevron-down"></i>
-                        </Link>
-                        {showDropdown && (
-                          <ul className="dropdown-menu">
-                            <li>
-                              <Link to="/resources/blogs">Blogs</Link>
-                            </li>
-                            <li>
-                              <Link to="/resources/newsletters">Newsletters</Link>
-                            </li>
-                            <li>
-                              <Link to="/resources/video-tutorials">Video Tutorials</Link>
-                            </li>
-                            <li>
-                              <Link to="/resources/case-studies">Case Studies</Link>
-                            </li>
-                          </ul>
-                        )}
-                      </li>
+              className="dropdown"
+              onMouseEnter={() => setShowDropdown(true)}
+              onMouseLeave={() => setShowDropdown(false)}
+            >
+              <Link
+                to="/resources"
+                className={splitLocation[1] === "resources" ? "active" : ""}
+              >
+                Resources <i className="bi bi-chevron-down"></i>
+              </Link>
+              {showDropdown && (
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link to="/blogs">Blogs</Link>
+                  </li>
+                  <li>
+                    <Link to="/newsletters">Newsletters</Link>
+                  </li>
+                  <li>
+                    <Link to="/video-tutorials">Video Tutorials</Link>
+                  </li>
+                  <li>
+                    <Link to="/case-studies">Case Studies</Link>
+                  </li>
+                </ul>
+              )}
+            </li>
             <li>
             <Link to ="/careers"  className={splitLocation[1] === "careers" ? "active" : ""}> Careers</Link>
             </li>
