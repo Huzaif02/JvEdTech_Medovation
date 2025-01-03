@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import dashboard from '../img/revenue-dashboard.png'
+import dashboard from '../img/join-dashboard.jpg'
 
 const Revenue = () => {
   return (

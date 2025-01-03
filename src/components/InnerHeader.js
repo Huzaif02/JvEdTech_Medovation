@@ -82,7 +82,6 @@ const InnerHeader = () => {
               onMouseLeave={() => setShowDropdown(false)}
             >
               <Link
-                to="/resources"
                 className={splitLocation[1] === "resources" ? "active" : ""}
               >
                 Resources <i className="bi bi-chevron-down"></i>
