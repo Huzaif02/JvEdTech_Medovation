@@ -1,5 +1,5 @@
 /**
-* Website Name: SymbioticInfotech
+* Website Name: Jvedtech Medovation
 * Author: Murugan
 **/
 
@@ -621,203 +621,144 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Hero Section
+# Hero Section (Redesigned)
 --------------------------------------------------------------*/
 
 .hero {
-position: relative;
-    padding: 180px 0 100px 0;
-    background: #227c1d;
+  position: relative;
+  padding: 160px 0 100px;
+  background: linear-gradient(135deg, #227c1d 0%, #34a853 100%);
+  color: #fff;
+  text-align: left;
+  overflow: hidden;
 }
 
 .hero .shape {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 350px;
-	
-}
-
-
-/*.hero {
-  width: 100%;
-  min-height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
-  position: relative;
-  padding: 150px 0 120px;
-  z-index: 3;
-}
-
-@media (min-width: 1034px) {
-  .hero:after {
-    position: absolute;
-    content: "";
-    width: 40%;
-    background: var(--color-primary);
-    top: 0;
-    bottom: 0;
-  }
-}
-
-.hero:before {
   position: absolute;
-  content: "";
-  /*background: rgba(27, 47, 69, 0.6);*/
-   /*background: #155bd5;
-  inset: 0;
-}*/
-
-/*@media (max-width: 1034px) {
-  .hero:before {
-    background: rgba(27, 47, 69, 0.7);
-  }
-}*/
-
-.hero .container {
-  z-index: 1;
-}
-
-@media (min-width: 1365px) {
-  .hero {
-    background-attachment: fixed;
-  }
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  /* background: url("../img/wave-shape.svg") no-repeat bottom; */
+  background-size: cover;
 }
 
 .hero h2 {
-  /*margin: 0;
-  font-size: 48px;
+  font-size: 2.75rem;
+  line-height: 1.25;
   font-weight: 700;
-  line-height: 1.2;
+  text-transform: capitalize;
   color: #fff;
-  font-family: var(--font-secondary);
-  */
-  font-size: 2.75em;
-    line-height: 1.25;
-  font-weight: 700;
-    color: var(--white);
-    text-shadow: 0px 3px 8px #00000017;
-    text-transform: capitalize;
+  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-.hero blockquote {
-  
-  padding-left: 20px;   
-  border-left: 2px solid rgba(255,255,255,.7);
-  margin: 40px 0;
-   
+.hero p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
 }
 
-.hero p {  
-    color: var(--white);
-    opacity: 0.7;
+.hero .btn-container {
+  margin-top: 30px;
 }
 
 .hero .btn-get-started {
-  font-family: var(--primary);    
-  font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 12px 24px;
-    border-radius: 4px;
-  letter-spacing: 1px;
-  display: inline-block;  
-  transition: 0.5s;
-  color: var(--color-primary);
-  background: var(--color-white);
-  border: 1px solid transparent;
-  z-index:1000;
-
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #f8b400;
+  border: 2px solid #f8b400;
+  transition: all 0.4s ease-in-out;
 }
-
 
 .hero .btn-get-started:hover {
-	
-	background: transparent;
-	color: var(--white);
-	border-color: var(--white);
-
+  background: transparent;
+  color: #f8b400;
 }
 
-
 .hero .btn-watch-video {
-	z-index:1000;
+  margin-left: 15px;
   font-size: 16px;
-  transition: 0.5s;
-  margin-left: 25px;
-  color: var(--white);
   font-weight: 600;
+  color: #fff;
+  transition: color 0.4s ease-in-out;
+  display: inline-flex;
+  align-items: center;
 }
 
 .hero .btn-watch-video i {
-  color: var(--color-white);
-  font-size: 32px;
-  transition: 0.3s;
-  line-height: 0;
-  margin-right: 8px;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .hero .btn-watch-video:hover {
-  color: #fff;
+  color: #f8b400;
 }
 
-.hero .btn-watch-video:hover i {
-  color: #fff;
+.hero .header-image {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .hero .header-image img {
-    width: 100%;
-    border-radius: 20px 20px 0px 0px;	
-    }
-
-@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
-  .hero .header-image {
-    display: none;
-  }
-  
-  .hero .shape {
-    height: 100px;
-  }
+  width: 100%;
+  display: block;
+  border-radius: 20px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px 80px;
+    text-align: center;
+  }
 
-
-
-@media (max-width: 640px) {
   .hero h2 {
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 2rem;
   }
-  
-  .hero {    
-    padding: 100px 0 60px 0;
-   
-}
 
-
- .hero .header-image {
-    margin-top: 40px;
-}
+  .hero p {
+    font-size: 0.9rem;
+  }
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
 
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.8rem;
+  }
 
-.carousel-indicators [data-bs-target] {  
-   background-color: #155bd5;
-   }
+  .hero p {
+    font-size: 0.85rem;
+  }
 
-
-.carousel-indicators {   
-    bottom: -25px;
+  .hero .btn-watch-video {
+    margin-left: 0;
+    margin-top: 10px;
+    display: block;
+  }
 }
+
+.carousel-indicators [data-bs-target] {
+  background-color: #f8b400;
+}
+
+.carousel-indicators {
+  bottom: -20px;
+}
+
 	
 /*.header-image img{
 	-webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);

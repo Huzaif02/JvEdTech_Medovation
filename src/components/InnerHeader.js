@@ -88,6 +88,22 @@ const InnerHeader = () => {
               </Link>
               {showDropdown && (
                 <ul className="dropdown-menu">
+                  <li className="dropdown">
+                    <Link>
+                      Events <i className="bi bi-chevron-right"></i>
+                    </Link>
+                    <ul className="dropdown-submenu">
+                      <li>
+                        <Link to="/events/webinars">Webinars</Link>
+                      </li>
+                      <li>
+                        <Link to="/events/workshops">Workshops</Link>
+                      </li>
+                      <li>
+                        <Link to="/events/campaigns">Campaigns</Link>
+                      </li>
+                    </ul>
+                  </li>
                   <li>
                     <Link to="/blogs">Blogs</Link>
                   </li>
@@ -103,6 +119,7 @@ const InnerHeader = () => {
                 </ul>
               )}
             </li>
+
             <li>
             <Link to ="/careers"  className={splitLocation[1] === "careers" ? "active" : ""}> Careers</Link>
             </li>

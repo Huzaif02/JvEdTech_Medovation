@@ -11,106 +11,79 @@ const Footer = () => {
       <footer id="footer" className="footer">
         <div className="footer-content">
           <div className="container">
-            <div className="row gy-4">
-              <div className="col-lg-4 col-md-12 footer-info">
+            <div className="row d-flex justify-content-between align-items-start">
+              <div className="col-lg-2 footer-info">
                 <Link to="/" className="logo d-flex align-items-center">
                   <img src={footerLogo} alt="" title="" />
                 </Link>
                 <p>
-                Empowering Lives with Cutting-Edge Solutions in Education, Wellness, and Technology
+                  Empowering Lives with Cutting-Edge Solutions in Education, Wellness, and Technology
                 </p>
-                <div className="social-links d-flex  mt-3">
+                <div className="social-links d-flex mt-3">
                   <Link to="/" className="twitter">
                     <i className="bi bi-twitter"></i>
                   </Link>
-
                   <Link to="/" className="facebook">
                     <i className="bi bi-facebook"></i>
                   </Link>
-                  
-                  <Link to ="https://www.linkedin.com/company/jvedtechmedovation/" className="linkedin">
+                  <Link to="https://www.linkedin.com/company/jvedtechmedovation/" className="linkedin">
                     <i className="bi bi-linkedin"></i>
+                  </Link>
+                  <Link to="https://chat.whatsapp.com/KedBa4ZTIPn3e5V4tqIalr" className="whatsapp">
+                    <i className="bi bi-whatsapp"></i>
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-2 col-6 footer-links">
+
+              <div className="col-lg-2 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <Link to ="/">Home</Link>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <Link to="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <Link to ="/services">Services</Link>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <Link to="/careers">Careers</Link>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <Link to ="/contact">Contact Us</Link>
-                  </li>
+                  <li><i className="bi bi-dash"></i> <Link to="/">Home</Link></li>
+                  <li><i className="bi bi-dash"></i> <Link to="/about">About Us</Link></li>
+                  <li><i className="bi bi-dash"></i> <Link to="/services">Services</Link></li>
+                  <li><i className="bi bi-dash"></i> <Link to="/careers">Careers</Link></li>
+                  <li><i className="bi bi-dash"></i> <Link to="/contact">Contact Us</Link></li>
                 </ul>
               </div>
-              <div className="col-lg-3 col-6 footer-links">
+
+              <div className="col-lg-2 footer-links">
                 <h4>Our Services</h4>
                 <ul>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <HashLink smooth to ="/services/#Educational-content">
-                    EduGlobe
-                    </HashLink>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <HashLink smooth to ="/services/#Entertainment-content">
-                    In-Home Wellness
-                    </HashLink>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <HashLink smooth to="/services/#Games">Digital Ads Pro Expertise</HashLink>
-                  </li>
-                  <li>
-                    <i className="bi bi-dash"></i>
-                    <HashLink smooth to ="/services/#Sports">Medi AI Informatics</HashLink>
-                  </li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Educational-content">EduGlobe</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Entertainment-content">In-Home Wellness</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Games">Digital Ads Pro Expertise</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Sports">Medi AI Informatics</HashLink></li>
                 </ul>
               </div>
-              <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+              <div className="col-lg-2 footer-links">
+                <h4>Legals</h4>
+                <ul>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/privacy-policy">Privacy Policy</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/tnc">T n C</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/shipping-policy">Shipping Policy</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/refund-policy">Refund Policy</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/return-policy">Return Policy</HashLink></li>
+                </ul>
+              </div>
+
+              <div className="col-lg-3 footer-contact text-start">
                 <h4>Contact Us</h4>
                 <address>
-                 
-                  A/14 Plot No.2 Suryadarsha, <br /> N CHS Mhada Colony Mulund East, <br /> Mumbai
-                  , Mumbai - 400081. <br />
+                  A/14 Plot No.2 Suryadarsha, <br /> N CHS Mhada Colony Mulund East, <br /> Mumbai, Mumbai - 400081. <br />
                   <br />
                   <strong>Phone:</strong> +91 - 86556 07722 <br />
-                  <strong>Email: </strong>
-                  <a href="mailto:info@jvedtech.com">                  
-                     info@jvedtech.com
-                  </a> 
-                  <br />
+                  <strong>Email:</strong> <a href="mailto:info@jvedtech.com">info@jvedtech.com</a> <br />
                 </address>
               </div>
             </div>
           </div>
         </div>
+
         <div className="footer-legal">
-          <div className="container">
+          <div className="container d-flex justify-content-center">
             <div className="copyright">
-              <span id="copyright">
-                <script>
-                  document.getElementById('copyright').appendChild(document.createTextNode(new
-                  Date().getFullYear()) )
-                </script>
-              </span>
-              &copy;  Copyright
+              &copy; <span id="copyright">{new Date().getFullYear()}</span> Copyright
               <span> JvEdTech Medovation Pvt. Ltd </span>. All Rights Reserved
             </div>
           </div>

@@ -33,7 +33,7 @@ const Carousel = () => {
                 <Link to="/about" className="btn-get-started">
                   Read More
                 </Link>
-                <ModalVideo channel='youtube' autoplay='true' isOpen={isOpen} videoId="#" onClose={() => setOpen(false)} />
+                <ModalVideo channel='youtube' autoplay='true' isOpen={isOpen} videoId="iZT4G159hzw" onClose={() => setOpen(false)} />
               <span className="btn-watch-video d-flex align-items-center pointer" onClick={()=> setOpen(true)}> <i className="bi bi-play-circle-fill"></i>
                 <span>Watch Intro</span>
               </span>

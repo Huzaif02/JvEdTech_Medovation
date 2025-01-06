@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+const eduglobe = require('../img/icons/edu globe.png');
+const homecare = require('../img/icons/in home wellness.png');
+const digital = require('../img/icons/digital ads.png');
+const mediai = require('../img/icons/medi ai.png')
 
 const ServiceList = () => {
   return (
@@ -20,7 +24,7 @@ const ServiceList = () => {
             >
               <div className="single-service">
                 <div className="icon flex-shrink-0">
-                  <i className="bi bi-book" style={{ color: "#f57813" }}></i>
+                  <img src={eduglobe} alt="EduGlobe Icon" style={{ width: "40px", height: "40px" }} />
                 </div>
                 <div>
                   <h4 className="title">
@@ -46,10 +50,7 @@ const ServiceList = () => {
             >
               <div className="single-service">
                 <div className="icon flex-shrink-0">
-                  <i
-                    className="bi bi-collection-play"
-                    style={{ color: "#15a04a" }}
-                  ></i>
+                  <img src={homecare} alt="In Hoome Wellness Icon" style={{ width: "40px", height: "40px" }} />
                 </div>
                 <div>
                   <h4 className="title">
@@ -74,10 +75,7 @@ const ServiceList = () => {
             >
               <div className="single-service">
                 <div className="icon flex-shrink-0">
-                  <i
-                    className="bi bi-controller"
-                    style={{ color: "#f5cf13" }}
-                  ></i>
+                  <img src={digital} alt="Digital Ads pro Icon" style={{ width: "40px", height: "40px" }} />  
                 </div>
                 <div>
                   <h4 className="title">
@@ -102,10 +100,7 @@ const ServiceList = () => {
             >
               <div className="single-service">
                 <div className="icon flex-shrink-0">
-                  <i
-                    className="bi bi-universal-access-circle"
-                    style={{ color: "#1335f5" }}
-                  ></i>
+                  <img src={mediai} alt="EduGlobe Icon" style={{ width: "40px", height: "40px" }} />
                 </div>
                 <div>
                   <h4 className="title">
