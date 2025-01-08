@@ -5,6 +5,13 @@ import Preloader from "./layout/Preloader";
 import Blogs from "./ui/Blogs";
 import BlogDetailPage from "./ui/BlogDetailPage";
 import NewsletterPage from "./ui/NewsletterPage";
+import PrivacyPolicyPage from "./ui/PrivacyPolicyPage";
+import TnC from "./ui/TnC";
+import ShippingPolicy from "./ui/ShippingPolicy";
+import RefundPolicy from "./ui/RefundPolicy";
+import ReturnPolicy from "./ui/ReturnPolicy";
+import Webinars from "./ui/Webinars";
+
 const Home = lazy(() => import("./ui/Home"));
 const Career = lazy(() => import("./ui/Career"));
 const Contact = lazy(() => import("./ui/Contact"));
@@ -24,8 +31,14 @@ function App() {
             <Route path="careers" element={<Career />} />
             <Route path="contact" element={<Contact />} />
             <Route path="blogs" element={<Blogs />} />
+            <Route path="events/webinars" element={<Webinars />} />
             <Route path="blogs/:id" element={<BlogDetailPage />} />
             <Route path="newsletters" element={<NewsletterPage />} />
+            <Route path="privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="tnc" element={<TnC />} />
+            <Route path="shipping-policy" element={<ShippingPolicy />} />
+            <Route path="refund-policy" element={<RefundPolicy />} />
+            <Route path="return-policy" element={<ReturnPolicy />} />
             <Route path="*" element={<NoPage />} />       
           </Routes>
         </Suspense>

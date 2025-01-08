@@ -1,7 +1,6 @@
 // src/pages/Blogs.js
 import React from 'react';
-import { blogs } from '../data/blogsData';
-import BlogCard from '../components/BlogCard';
+import { webinars } from '../data/webinarData';
 
 import AOS from "aos";
 import '../../node_modules/aos/dist/aos.css'
@@ -10,8 +9,9 @@ import InnerHeader from '../components/InnerHeader';
 import Footer from '../components/Footer';
 import abtHeader from '../img/about-header.jpg'
 import { useEffect } from 'react';
+import WebinarCard from '../components/WebinarCard';
 
-const Blogs = () => {
+const Webinars = () => {
     useEffect(() => {
           AOS.init();
           AOS.refresh();
@@ -28,12 +28,12 @@ const Blogs = () => {
   return (
     <>
         <InnerHeader />
-        <InnerHeaderBanner name={"Our Blogs"} img = {abtHeader}/>
+        <InnerHeaderBanner name={"Our Webinars"} img = {abtHeader}/>
 
         <div className="blogs-page">
         <div className="blogs-grid">
-            {blogs.map(blog => (
-            <BlogCard key={blog.id} blog={blog} />
+            {webinars.map(webinar => (
+            <WebinarCard key={webinar.id} webinar={webinar} />
             ))}
         </div>
     </div>
@@ -42,4 +42,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Webinars;

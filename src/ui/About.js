@@ -28,8 +28,7 @@ const About = () => {
         name: 'Dr. Jyoti Rao',
         designation: 'Co-Founder & CEO',
         description: 'null',
-        linkedin: 'https://www.linkedin.com/in/johndoe',
-        twitter: 'https://twitter.com/johndoe',
+        linkedin: 'https://www.linkedin.com/in/dr-jyoti-dongre-rao-11520726/',
         image: imagePaths['Jyoti.png'],
       },
       {
@@ -37,7 +36,6 @@ const About = () => {
         designation: 'Director Clinical Education and Operations',
         description: 'null',
         linkedin: 'https://www.linkedin.com/in/janesmith',
-        twitter: 'https://twitter.com/janesmith',
         image: imagePaths['Marilyn.jpeg'],
       },
       {
@@ -45,15 +43,13 @@ const About = () => {
         designation: 'Associate Director-Health and Wellbeing',
         description: 'null',
         linkedin: 'https://www.linkedin.com/in/marktaylor',
-        twitter: 'https://twitter.com/marktaylor',
         image: imagePaths['Poornesh.jpeg'],
       },
       {
          name: 'Mr. Dinesh Kamble',
          designation: 'Board of Director',
          description: 'null',
-         linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
+         linkedin: 'https://www.linkedin.com/in/dinesh-k-a409a06b/',
          image: imagePaths['Dinesh.jpeg'],
        },
        {
@@ -61,7 +57,6 @@ const About = () => {
          designation: 'Board of Director',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
          image: imagePaths['Pravin.jpeg'],
        },
        {
@@ -69,7 +64,6 @@ const About = () => {
          designation: 'Associate - Clinical Education',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
          image: imagePaths['Vinita.jpeg'],
        },
        {
@@ -77,7 +71,6 @@ const About = () => {
          designation: 'Associate - Social Media and Branding',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
          image: imagePaths['Vishnu.jpeg'],
        },
        {
@@ -85,31 +78,27 @@ const About = () => {
          designation: 'Businesss Development Analyst',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
          image: imagePaths['Sajin.jpeg'],
        },
        {
          name: 'Mr. Abdul Sheikh',
          designation: 'Businesss Development Analyst',
          description: 'null',
-         linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
-         image: imagePaths['Sajin.jpeg'],
+         linkedin: 'https://www.linkedin.com/in/abdul-sheikh-203522a5/',
+         image: imagePaths['Abdul.jpeg'],
        },
        {
          name: 'Mr. Sahil Choure',
          designation: 'Businesss Development Analyst',
          description: 'null',
-         linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
-         image: imagePaths['Sajin.jpeg'],
+         linkedin: 'https://www.linkedin.com/in/sahil-choure-11o02/',
+         image: imagePaths['no-image.jpeg'],
        },
        {
          name: 'Mr. Huzaif Shaikh',
          designation: 'Businesss Development Analyst',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
          image: imagePaths['Huzaif.jpg'],
        },
        {
@@ -117,26 +106,34 @@ const About = () => {
          designation: 'Businesss Development Analyst',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
-         image: imagePaths['Sajin.jpeg'],
-       },
-       {
-         name: 'Mr. Yash Joshi',
-         designation: 'Businesss Development Analyst',
-         description: 'null',
-         linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
-         image: imagePaths['Sajin.jpeg'],
+         image: imagePaths['Aryaa.jpeg'],
        },
        {
          name: 'Mr. Shradha Mishra',
          designation: 'Businesss Development Analyst',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         twitter: 'https://twitter.com/marktaylor',
-         image: imagePaths['Sajin.jpeg'],
+         image: imagePaths['Shradha.jpeg'],
        }
     ];
+
+    const collaboratorMembers = [
+      {
+        name: 'Mr. Bipinkumar Rathod',
+        designation: 'Independent Director',
+        description: 'null',
+        linkedin: 'https://www.linkedin.com/in/bipinkumar-rathod-b900b414/',
+        image: imagePaths['Bipin.jpeg'],
+      },
+      {
+        name: 'Mrs. Madhavi Chikhale',
+        designation: 'Independent Director',
+        description: 'null',
+        linkedin: 'https://www.linkedin.com/in/madhavi-chikhale-914a1224/',
+        image: imagePaths['Madhavi.jpeg'],
+      },
+    ];
+
   return (
     <>
    <InnerHeader />
@@ -225,9 +222,34 @@ const About = () => {
                      <h4>{member.name}</h4>
                      <span>{member.designation}</span>
                      <div className="social mt-2">
-                     <Link to={member.twitter} target="_blank" className="mx-2">
-                        <i className="bi bi-twitter"></i>
+                     <Link to={member.linkedin} target="_blank" className="mx-2">
+                        <i className="bi bi-linkedin"></i>
                      </Link>
+                     </div>
+                  </div>
+               </div>
+               ))}
+            </div>
+         </div>
+      </section>
+      {/* external Collaborator section */}
+      <section id="management" className="management light-bg aos-init" data-aos="fade-up" data-aos-delay="300">
+         <div className="container">
+            <div className="section-header">
+               <h2>Our Independent Directors</h2>
+               <p>Guiding us with their vast experience and strategic insights, our independent directors provide invaluable leadership and governance. Their expertise ensures our commitment to excellence, integrity, and sustainable growth.</p>
+            </div>
+           
+            <div className="row team-section ">
+               {collaboratorMembers.map((member, index) => (
+               <div className="col-md-4 text-center d-flex flex-column align-items-center mb-4" key={index}>
+                  <div className="pic mb-3">
+                     <img src={member.image} className="img-fluid rounded-circle" alt={member.name} style={{ width: '250px', height: '250px' }} />
+                  </div>
+                  <div className="member-info">
+                     <h4>{member.name}</h4>
+                     <span>{member.designation}</span>
+                     <div className="social mt-2">
                      <Link to={member.linkedin} target="_blank" className="mx-2">
                         <i className="bi bi-linkedin"></i>
                      </Link>
