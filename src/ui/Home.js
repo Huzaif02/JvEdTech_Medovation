@@ -6,8 +6,15 @@ import ClientList from "../components/ClientList";
 import Facts from "../components/Facts";
 import ServiceList from "../components/ServiceList";
 import Revenue from "../components/Revenue";
+import AOS from "aos";
+import { useEffect } from 'react';
+
 
 const Home = () => {
+  useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
   return (
     <>
       <InnerHeader />

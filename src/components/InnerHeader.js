@@ -1,30 +1,20 @@
 import React, { useState } from "react";
-import logo from "../img/jvlogo.jpg";
-//import Navbar from "./Navbar";
+import logo from "../img/jvlogo.png";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 
 const InnerHeader = () => {
-//
-
   const toTop = () => {
     scroll.scrollToTop({ delay: 0, duration: 0 });
   };
 
-
-  //assigning location variable
   const location = useLocation();
-  
-   //destructuring path name from location
-   const {pathname} = location;
-
-  //Javascript split method to get the name of the path in array
+  const { pathname } = location;
   const splitLocation = pathname.split("/");
 
-
-  //sticky header
+  // Sticky header effect
   useEffect(() => {
     const selectHeader = document.querySelector("#header");
     if (selectHeader) {
@@ -36,101 +26,165 @@ const InnerHeader = () => {
     }
   }, []);
 
-  // mobile view menu
-  const mobilemenu = (event) => {
-    event.preventDefault();
-    const mobileNavShow = document.querySelector(".mobile-nav-show");
-    const mobileNavHide = document.querySelector(".mobile-nav-hide");
-    mobileNavShow.classList.toggle("d-none");
-    mobileNavHide.classList.toggle("d-none");
-    document.querySelector("body").classList.toggle("mobile-nav-active");
+  const [mobileNavActive, setMobileNavActive] = useState(false);
+  const [dropdownActive, setDropdownActive] = useState(false);
+  const [subDropdownActive, setSubDropdownActive] = useState(false);
+
+  // Toggle mobile menu
+  const toggleMobileMenu = () => {
+    setMobileNavActive(!mobileNavActive);
+    document.body.classList.toggle("mobile-nav-active");
   };
 
-  const [showDropdown, setShowDropdown] = useState(false);
+  // Toggle dropdown in mobile view
+  const toggleDropdown = () => {
+    setDropdownActive(!dropdownActive);
+  };
+
+  // Toggle sub-dropdown in mobile view
+  const toggleSubDropdown = () => {
+    setSubDropdownActive(!subDropdownActive);
+  };
 
   return (
-    <>
-      <header id="header" className="header fixed-top">
-        <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-          <Link to="/" className="logo" onClick={toTop}>
-            <img 
-              width={120} height={80}
-              src={logo}
-              alt="JvEdTech Medovation"
-              title="JvEdTech Medovation"
-            />
-          </Link>
-          <span  onClick={mobilemenu}>  
-          <i className="mobile-nav-toggle mobile-nav-show bi bi-list"     
+    <header id="header" className="header fixed-top">
+      <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <Link to="/" className="logo" onClick={toTop}>
+          <img
+            width={120}
+            height={80}
+            src={logo}
+            alt="JvEdTech Medovation"
+            title="JvEdTech Medovation"
+          />
+        </Link>
+        <span onClick={toggleMobileMenu}>
+          <i
+            className={`mobile-nav-toggle ${
+              mobileNavActive ? "d-none" : ""
+            } mobile-nav-show bi bi-list`}
           ></i>
-          <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-          </span>
-          <nav id="navbar" className="navbar">
-          <ul onClick={mobilemenu}>
-            <li >
-              <Link to ="/"  className={splitLocation[1] === "" ? "active" : ""}> Home</Link>
-            </li>
+          <i
+            className={`mobile-nav-toggle ${
+              !mobileNavActive ? "d-none" : ""
+            } mobile-nav-hide bi bi-x`}
+          ></i>
+        </span>
+        <nav
+          id="navbar"
+          className={`navbar ${mobileNavActive ? "mobile-nav-active" : ""}`}
+        >
+          <ul>
             <li>
-            <Link to ="/about"  className={splitLocation[1] === "about" ? "active" : ""}> About Us</Link>
-            </li>
-            <li>
-            <Link to ="/services"  className={splitLocation[1] === "services" ? "active" : ""}> Services</Link>
-            </li>
-            <li
-              className="dropdown"
-              onMouseEnter={() => setShowDropdown(true)}
-              onMouseLeave={() => setShowDropdown(false)}
-            >
               <Link
-                className={splitLocation[1] === "resources" ? "active" : ""}
+                to="/"
+                className={splitLocation[1] === "" ? "active" : ""}
+                onClick={toggleMobileMenu}
               >
-                Resources <i className="bi bi-chevron-down"></i>
+                Home
               </Link>
-              {showDropdown && (
-                <ul className="dropdown-menu">
-                  <li className="dropdown">
-                    <Link>
-                      Events <i className="bi bi-chevron-right"></i>
-                    </Link>
-                    <ul className="dropdown-submenu">
-                      <li>
-                        <Link to="/events/webinars">Webinars</Link>
-                      </li>
-                      <li>
-                        <Link to="/events/workshops">Workshops</Link>
-                      </li>
-                      <li>
-                        <Link to="/events/campaigns">Campaigns</Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link to="/blogs">Blogs</Link>
-                  </li>
-                  <li>
-                    <Link to="/newsletters">Newsletters</Link>
-                  </li>
-                  <li>
-                    <Link to="/video-tutorials">Video Tutorials</Link>
-                  </li>
-                  <li>
-                    <Link to="/case-studies">Case Studies</Link>
-                  </li>
-                </ul>
-              )}
-            </li>
-
-            <li>
-            <Link to ="/careers"  className={splitLocation[1] === "careers" ? "active" : ""}> Careers</Link>
             </li>
             <li>
-            <Link to ="/contact"  className={splitLocation[1] === "contact" ? "active" : ""}> Contact Us</Link>
+              <Link
+                to="/about"
+                className={splitLocation[1] === "about" ? "active" : ""}
+                onClick={toggleMobileMenu}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className={splitLocation[1] === "services" ? "active" : ""}
+                onClick={toggleMobileMenu}
+              >
+                Services
+              </Link>
+            </li>
+            <li className="dropdown">
+            <span 
+              onClick={toggleDropdown} 
+              style={{ paddingLeft: '30px', cursor: 'pointer', display: 'inline-flex', alignItems: 'center' }}
+            >
+              Resources  <i className="bi bi-chevron-down"></i>
+            </span>
+              <ul
+                className={`dropdown-menu ${
+                  dropdownActive ? "show" : ""
+                }`}
+              >
+                <li className="dropdown">
+                  <span onClick={toggleSubDropdown}
+                        style={{ paddingLeft: '20px', cursor: 'pointer', display: 'inline-flex', alignItems: 'center' }}>
+                    Events <i className="bi bi-chevron-right"></i>
+                  </span>
+                  <ul
+                    className={`dropdown-submenu ${
+                      subDropdownActive ? "show" : ""
+                    }`}
+                  >
+                    <li>
+                      <Link to="/events/webinars" onClick={toggleMobileMenu}>
+                        Webinars
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/events/workshops" onClick={toggleMobileMenu}>
+                        Workshops
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/events/campaigns" onClick={toggleMobileMenu}>
+                        Campaigns
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link to="/blogs" onClick={toggleMobileMenu}>
+                    Blogs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/newsletters" onClick={toggleMobileMenu}>
+                    Newsletters
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/video-tutorials" onClick={toggleMobileMenu}>
+                    Video Tutorials
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/case-studies" onClick={toggleMobileMenu}>
+                    Case Studies
+                  </Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link
+                to="/careers"
+                className={splitLocation[1] === "careers" ? "active" : ""}
+                onClick={toggleMobileMenu}
+              >
+                Careers
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className={splitLocation[1] === "contact" ? "active" : ""}
+                onClick={toggleMobileMenu}
+              >
+                Contact Us
+              </Link>
             </li>
           </ul>
         </nav>
-        </div>
-      </header>
-    </>
+      </div>
+    </header>
   );
 };
 
