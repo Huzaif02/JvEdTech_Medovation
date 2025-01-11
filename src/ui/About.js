@@ -92,14 +92,14 @@ const About = () => {
          designation: 'Businesss Development Analyst',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/sahil-choure-11o02/',
-         image: imagePaths['no-image.jpeg'],
+         image: imagePaths['Sahil.jpeg'],
        },
        {
          name: 'Mr. Huzaif Shaikh',
          designation: 'Businesss Development Analyst',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/marktaylor',
-         image: imagePaths['Huzaif.jpg'],
+         image: imagePaths['Huzaif.jpeg'],
        },
        {
          name: 'Ms. Aryaa Praseed',

@@ -8,6 +8,7 @@ import ServiceList from "../components/ServiceList";
 import Revenue from "../components/Revenue";
 import AOS from "aos";
 import { useEffect } from 'react';
+import Testimonial from "../components/Testimonial";
 
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
         <ServiceList/>
         <ClientList/>
         <Facts/>
+        <Testimonial/>
         <Revenue/>
       </main>
       <Footer />

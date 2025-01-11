@@ -228,7 +228,7 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(21, 91, 213, 0.5); /* Slight opacity blue background to complement */
+  background-color: rgba(182, 104, 22, 0.39); /* Slight opacity blue background to complement */
   position: absolute;
   inset: 0;
 }
@@ -236,7 +236,7 @@ section {
 .breadcrumbs h2 {
   font-size: 56px;
   font-weight: 500;
-  color: var(--color-default); /* Darker text color for better visibility */
+  color: #000000; /* Darker text color for better visibility */
   font-family: var(--font-secondary);
 }
 
@@ -248,11 +248,11 @@ section {
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.7); /* Darker color for breadcrumb links */
+  color: #ffffff; /* White text color for breadcrumbs */
 }
 
 .breadcrumbs ol a {
-  color: var(--color-primary); /* Soft blue accent for links */
+  color: #ffffff; /* White text color for breadcrumbs */
   transition: 0.3s;
 }
 
@@ -820,7 +820,7 @@ section {
 .hero {
   position: relative;
   padding: 160px 0 100px;
-  background: linear-gradient(135deg, #6c757d 0%, #adb5bd 100%); /* Neutral gradient tones */
+  background: linear-gradient(135deg, #271919 0%, #a80000 100%); /* Neutral gradient tones */
   color: #fff;
   text-align: left;
   overflow: hidden;
@@ -939,7 +939,6 @@ section {
 
   .hero .btn-watch-video {
     margin-left: 0;
-    margin-top: 10px;
     display: block;
   }
 }
@@ -1178,6 +1177,122 @@ section {
 .services-list .single-service .light-rounded-buttons {
   margin-top: 25px;
 }
+
+/* Testimonials */
+
+.testimonial {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.heading-title {
+  margin-bottom: 30px;
+}
+
+.cards {
+  position: relative;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 0 15px; /* Add margin for spacing between cards */
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img-text h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.img-text span {
+  font-size: 14px;
+  color: #666;
+}
+
+.details {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.details a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  color: #0070f3;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.details a .link-icon {
+  margin-left: 5px;
+}
+
+/* Position both arrows correctly */
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.next-arrow {
+  right: -35px; /* Right arrow positioned on the right */
+}
+
+.prev-arrow {
+  left: -35px; /* Left arrow positioned on the left */
+}
+
+/* Styling for the buttons */
+.slick-arrow button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-arrow button:hover {
+  color: #0070f3; /* Optional: hover effect */
+}
+/* Add spacing between cards */
+.slick-slide {
+  padding: 0 15px; /* Add padding around each slide for spacing */
+}
+
+/* For smaller screens, ensure cards are responsive */
+@media (max-width: 800px) {
+  .card {
+    margin: 0 10px; /* Reduce margin on smaller screens */
+  }
+
+  .slick-arrow .next {
+    right: -20px; /* Adjust arrow positioning for smaller screens */
+  }
+
+  .slick-arrow .prev {
+    left: -20px; /* Adjust arrow positioning for smaller screens */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Call To Action Section

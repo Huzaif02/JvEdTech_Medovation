@@ -13,7 +13,6 @@ const InnerHeaderBanner = (props) => {
             </ol>
          </div>
       </div>
-      
     </>
   )
 }

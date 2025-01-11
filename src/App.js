@@ -11,6 +11,7 @@ import ShippingPolicy from "./ui/ShippingPolicy";
 import RefundPolicy from "./ui/RefundPolicy";
 import ReturnPolicy from "./ui/ReturnPolicy";
 import Webinars from "./ui/Webinars";
+import Workshops from "./ui/Workshops";
 
 const Home = lazy(() => import("./ui/Home"));
 const Career = lazy(() => import("./ui/Career"));
@@ -32,6 +33,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="blogs" element={<Blogs />} />
             <Route path="events/webinars" element={<Webinars />} />
+            <Route path="events/workshops" element={<Workshops />} />
             <Route path="blogs/:id" element={<BlogDetailPage />} />
             <Route path="newsletters" element={<NewsletterPage />} />
             <Route path="privacy-policy" element={<PrivacyPolicyPage />} />

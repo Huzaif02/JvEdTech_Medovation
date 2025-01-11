@@ -4,11 +4,10 @@ import NewsletterCard from "../components/NewsletterCard";
 
 import AOS from "aos";
 import '../../node_modules/aos/dist/aos.css'
-import about_img from '../img/about-image.jpg'
+// import about_img from '../img/about-image.jpg'
 import InnerHeaderBanner from '../components/InnerHeaderBanner';
 import InnerHeader from '../components/InnerHeader';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
 import abtHeader from '../img/about-header.jpg'
 import { useEffect } from 'react';
 import { newsletters } from '../data/newsletterData';
