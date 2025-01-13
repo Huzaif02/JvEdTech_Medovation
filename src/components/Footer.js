@@ -49,10 +49,10 @@ const Footer = () => {
               <div className="col-lg-2 footer-links">
                 <h4>Our Services</h4>
                 <ul>
-                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Educational-content">EduGlobe</HashLink></li>
-                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Entertainment-content">In-Home Wellness</HashLink></li>
-                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Games">Digital Ads Pro Expertise</HashLink></li>
-                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#Sports">Medi AI Informatics</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#eduglobe">EduGlobe</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#digital">Digital Ads Pro Expertise</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#mediai">Medi AI Informatics</HashLink></li>
+                  <li><i className="bi bi-dash"></i> <HashLink smooth to="/services/#inhome">In-Home Wellness</HashLink></li>
                 </ul>
               </div>
 

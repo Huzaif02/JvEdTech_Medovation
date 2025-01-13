@@ -8,10 +8,10 @@ export const testimonial = [
     },
     {
       id: 2,
-      name: "Ananya Gupta",
-      cover: require('../img/team/Huzaif.jpeg'),
-      post: "Principal, Shantiniketan School, Delhi",
-      desc: "JV EdTech's workshops have transformed the way our teachers approach digital learning. Their insightful training and innovative methods empowered our staff with practical skills, revolutionizing classroom engagement and online learning practices. The dedication and expertise of their team have made a lasting impact on our institution. Collaborating with JV EdTech has been an enriching experience, and we look forward to future endeavors to enhance education and training initiatives.",
+      name: "Mrs. Prachi Dharap",
+      cover: require('../img/testimonial/Prachi.jpeg'),
+      post: "Principal, Sau. Minatai Thakre Institute of Nursing Education, Thane",
+      desc: "We had an exceptional experience with JV Edtech Medovation’s two-day session, 'Standing Out with Style: Enhancing Your Professional Image,' led by Dr. Jyoti Rao and Mrs. Marilyn Olivera. The engaging blend of theory and role-play transformed our nursing students, boosting their confidence and professional presence. This impactful and engaging training enhanced their clinical performance and academic engagement. Thank you!",
     },
     {
       id: 3,

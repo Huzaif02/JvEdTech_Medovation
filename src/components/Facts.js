@@ -13,19 +13,19 @@ const Facts = () => {
               </div>
               <div className="row counters">
                 <div className="col-lg-4 col-6 text-center">
-                  <span className="purecounter">15</span>
-                  <h3>COUNTRIES</h3>
-                  <p>Global Reach</p>
+                  <span className="purecounter">30+</span>
+                  <h3>EVENTS</h3>
+                  <p>Diverse Reach</p>
                 </div>
                 <div className="col-lg-4 col-6 text-center">
-                  <span className="purecounter">120</span>
+                  <span className="purecounter">10+</span>
                   <h3>PROJECTS</h3>
                   <p>Successfully Delivered</p>
                 </div>
                 <div className="col-lg-4 col-6 text-center">
-                  <span className="purecounter">50,000</span>
+                  <span className="purecounter">20,000+</span>
                   <h3>LEARNERS</h3>
-                  <p>Impacted Globally</p>
+                  <p>Impacted Till Date</p>
                 </div>
               </div>
             </div>

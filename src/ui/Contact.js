@@ -100,7 +100,7 @@ const Contact = () => {
                     <h4>Location:</h4>
                     <h5>India:</h5>
                     <p>
-                    A/14 Plot No.2 Suryadarsha,Chellamal Street, <br />N CHS Mhada Colony Mind E,
+                    A/14 Plot No.2 Suryadarsha,Chellamal Street, <br />N CHS Mhada Colony Mulund East,
                     Mumbai, <br/>Mumbai - 400081.
                     </p>
                   </div>

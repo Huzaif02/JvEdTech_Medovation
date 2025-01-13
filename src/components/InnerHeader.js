@@ -51,7 +51,7 @@ const InnerHeader = () => {
       <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
         <Link to="/" className="logo" onClick={toTop}>
           <img
-            width={120}
+            width={100}
             height={80}
             src={logo}
             alt="JvEdTech Medovation"

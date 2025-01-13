@@ -43,31 +43,7 @@ const ServiceList = () => {
               </div>
             </div>
 
-            <div
-              className="col-lg-6 col-md-6 service-item d-flex"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <div className="single-service">
-                <div className="icon flex-shrink-0">
-                  <img src={homecare} alt="In Hoome Wellness Icon" style={{ width: "40px", height: "40px" }} />
-                </div>
-                <div>
-                  <h4 className="title">
-                    <Link to="/services" className="stretched-link">
-                      In-Home Wellness
-                    </Link>
-                  </h4>
-                  <p className="description">
-                  Bringing quality medical services directly to individuals in the comfort of their homes, offering convenience and personalized care for patients.
-                  </p>
-                  <Link to="/services" className="btn-get-started">
-                    Read More
-                  </Link>
-                </div>
-              </div>
-            </div>
-
+            
             <div
               className="col-lg-6 col-md-6 service-item d-flex"
               data-aos="fade-up"
@@ -110,6 +86,31 @@ const ServiceList = () => {
                   </h4>
                   <p className="description">
                   Medi AI Informatics services harness the power of Artificial Intelligence to transform the healthcare landscape.{" "}
+                  </p>
+                  <Link to="/services" className="btn-get-started">
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="col-lg-6 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div className="single-service">
+                <div className="icon flex-shrink-0">
+                  <img src={homecare} alt="In Hoome Wellness Icon" style={{ width: "40px", height: "40px" }} />
+                </div>
+                <div>
+                  <h4 className="title">
+                    <Link to="/services" className="stretched-link">
+                      In-Home Wellness
+                    </Link>
+                  </h4>
+                  <p className="description">
+                  Bringing quality medical services directly to individuals in the comfort of their homes, offering convenience and personalized care for patients.
                   </p>
                   <Link to="/services" className="btn-get-started">
                     Read More

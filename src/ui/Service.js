@@ -1,13 +1,19 @@
 import React from "react";
-import education from "../img/education-bg.png";
-import entertainment from "../img/entertainment-bg.png";
-import games from "../img/games-bg.png";
-import sports from "../img/sports-bg.png";
+
+import inhomeimg from "../img/inhome.png";
+import mediaiimg from "../img/mediai.png";
+import digitalimg from "../img/digital.png";
+import eduglobeimg from "../img/eduglobe.png";
 
 import InnerHeaderBanner from "../components/InnerHeaderBanner";
 import InnerHeader from "../components/InnerHeader";
 import Footer from "../components/Footer";
 import serviceHeader from '../img/services-header.jpg'
+
+const eduglobe = require('../img/icons/edu globe.png');
+const homecare = require('../img/icons/in home wellness.png');
+const digital = require('../img/icons/digital ads.png');
+const mediai = require('../img/icons/medi ai.png')
 
 const Service = () => {
   return (
@@ -16,7 +22,8 @@ const Service = () => {
       <InnerHeaderBanner name={"Services"} img = {serviceHeader}/>
 
       <main id="main">
-        <section id="services-list" className="services-list">
+
+        <section id="eduglobe" className="services-list">
           <div className="container" data-aos="fade-up">
             <div className="section-header">
               <h2>
@@ -36,7 +43,7 @@ const Service = () => {
                 data-aos-delay="100"
               >
                 <img
-                  src={education}
+                  src={eduglobeimg}
                   className="img-fluid"
                   alt=""
                   title="Educational-content"
@@ -49,7 +56,7 @@ const Service = () => {
                 data-aos-delay="100"
               >
                 <div className="icon flex-shrink-0">
-                  <i className="bi bi-book" style={{ color: "#f57813" }}></i>
+                  <img src={eduglobe} alt="EduGlobe Icon" style={{ width: "40px", height: "40px" }} />
                 </div>
                 <div>
                   <h4 className="title"> EduGlobe </h4>
@@ -75,7 +82,88 @@ const Service = () => {
           </div>
         </section>
 
-        <section className="services-list light-bg" id="Entertainment-content">
+        
+
+        <section className="services-list ">
+          <div className="container" id="digital">
+            <div className="row gy-5  align-items-center">
+              <div
+                className="col-lg-5 col-md-6 service-item "
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img src={digitalimg} className="img-fluid" alt="digital ads" />
+              </div>
+
+              <div
+                className="col-lg-7 col-md-6 service-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div className="icon flex-shrink-0">
+                  <img src={digital} alt="Digital Ads pro Icon" style={{ width: "40px", height: "40px" }} />  
+                </div>
+                <div>
+                  <h4 className="title"> Digital Ads Pro Expertise </h4>
+                  <p className="description">
+                  Our Digital Ads Pro Expertise focuses on revolutionizing healthcare marketing by implementing innovative digital strategies. We specialize in:
+                    <p><span className="fw-bold">Targeted Campaigns: </span></p>Reaching the right audience with personalized healthcare messaging.
+                    <p><span className="fw-bold">Social Media Management:</span></p> Engaging patients and stakeholders through impactful social media campaigns.
+                    <p><span className="fw-bold">Pay-Per-Click (PPC) Advertising: </span></p> Driving traffic and conversions with effective ad placements.
+                    <p><span className="fw-bold">Content Marketing:</span></p> Creating informative, high-quality content tailored to the healthcare industry.
+                  </p>
+                  <p className="description">
+                    <span className="fw-bold">
+                    We combine data-driven strategies with creative execution to help healthcare businesses expand their reach and improve accessibility.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="services-list light-bg" id="mediai">
+          <div className="container">
+            <div className="row gy-5 align-items-center">
+              <div
+                className="col-lg-7 col-md-6 service-item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div className="icon flex-shrink-0">
+                  <img src={mediai} alt="Medi Ai Icon" style={{ width: "40px", height: "40px" }} />  
+                </div>
+                
+                <div>
+                  <h4 className="title"> Medi AI Informatics </h4>
+                  <p className="description">
+                  Our Medi AI Informatics services harness the power of Artificial Intelligence to transform the healthcare landscape. We offer:
+                    <p><span className="fw-bold">AI-Powered Diagnostics: </span></p>Enabling faster and more accurate disease detection
+                    <p><span className="fw-bold">Natural Language Processing (NLP):</span></p> Streamlining patient communication and record-keeping.
+                    <p><span className="fw-bold">Remote Patient Monitoring:  </span></p> Using AI tools to track health metrics and alert caregivers.
+                    <p><span className="fw-bold">Decision Support Systems: </span></p>  Empowering healthcare providers with data-driven insights for better decision-making.
+                  </p>
+                  <p className="description">
+                    <span className="fw-bold">
+                    With Medi AI Informatics, we aim to enhance operational efficiency, improve patient outcomes, and drive innovation in the healthcare sector.
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              <div
+                className="col-lg-5 col-md-6 service-item order-first order-sm-last"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <img src={mediaiimg} className="img-fluid" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="services-list light-bg" id="inhome">
           <div className="container" data-aos="fade-up">
             <div className="row gy-5 align-items-center ">
               <div
@@ -84,10 +172,7 @@ const Service = () => {
                 data-aos-delay="200"
               >
                 <div className="icon flex-shrink-0">
-                  <i
-                    className="bi bi-collection-play"
-                    style={{ color: "#15a04a" }}
-                  ></i>
+                  <img src={homecare} alt="In Hoome Wellness Icon" style={{ width: "40px", height: "40px" }} />
                 </div>
                 <div>
                   <h4 className="title"> In-Home Wellness </h4>
@@ -111,95 +196,12 @@ const Service = () => {
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
-                <img src={entertainment} className="img-fluid" alt="" />
+                <img src={inhomeimg} className="img-fluid" alt="" />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="services-list ">
-          <div className="container" id="Games">
-            <div className="row gy-5  align-items-center">
-              <div
-                className="col-lg-5 col-md-6 service-item "
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img src={games} className="img-fluid" alt="" />
-              </div>
-
-              <div
-                className="col-lg-7 col-md-6 service-item"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div className="icon flex-shrink-0">
-                  <i
-                    className="bi bi-controller"
-                    style={{ color: "#f5cf13" }}
-                  ></i>
-                </div>
-                <div>
-                  <h4 className="title"> Digital Ads Pro Expertise </h4>
-                  <p className="description">
-                  Our Digital Ads Pro Expertise focuses on revolutionizing healthcare marketing by implementing innovative digital strategies. We specialize in:
-                    <p><span className="fw-bold">Targeted Campaigns: </span></p>Reaching the right audience with personalized healthcare messaging.
-                    <p><span className="fw-bold">Social Media Management:</span></p> Engaging patients and stakeholders through impactful social media campaigns.
-                    <p><span className="fw-bold">Pay-Per-Click (PPC) Advertising: </span></p> Driving traffic and conversions with effective ad placements.
-                    <p><span className="fw-bold">Content Marketing:</span></p> Creating informative, high-quality content tailored to the healthcare industry.
-                  </p>
-                  <p className="description">
-                    <span className="fw-bold">
-                    We combine data-driven strategies with creative execution to help healthcare businesses expand their reach and improve accessibility.
-                    </span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="services-list light-bg" id="Sports">
-          <div className="container">
-            <div className="row gy-5 align-items-center">
-              <div
-                className="col-lg-7 col-md-6 service-item"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <div className="icon flex-shrink-0">
-                  <i
-                    className="bi bi-universal-access-circle"
-                    style={{ color: "#1335f5" }}
-                  ></i>
-                </div>
-                <div>
-                  <h4 className="title"> Medi AI Informatics </h4>
-                  <p className="description">
-                  Our Medi AI Informatics services harness the power of Artificial Intelligence to transform the healthcare landscape. We offer:
-                    <p><span className="fw-bold">AI-Powered Diagnostics: </span></p>Enabling faster and more accurate disease detection
-                    <p><span className="fw-bold">Natural Language Processing (NLP):</span></p> Streamlining patient communication and record-keeping.
-                    <p><span className="fw-bold">Remote Patient Monitoring:  </span></p> Using AI tools to track health metrics and alert caregivers.
-                    <p><span className="fw-bold">Decision Support Systems: </span></p>  Empowering healthcare providers with data-driven insights for better decision-making.
-                  </p>
-                  <p className="description">
-                    <span className="fw-bold">
-                    With Medi AI Informatics, we aim to enhance operational efficiency, improve patient outcomes, and drive innovation in the healthcare sector.
-                    </span>
-                  </p>
-                </div>
-              </div>
-
-              <div
-                className="col-lg-5 col-md-6 service-item order-first order-sm-last"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <img src={sports} className="img-fluid" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </>
