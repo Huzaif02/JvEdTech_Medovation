@@ -26,7 +26,7 @@ const Footer = () => {
                   <Link to="/" className="facebook">
                     <i className="bi bi-facebook"></i>
                   </Link>
-                  <Link to="https://www.linkedin.com/company/jvedtechmedovation/" className="linkedin">
+                  <Link to="https://www.linkedin.com/company/jv-edtech-medovation" className="linkedin">
                     <i className="bi bi-linkedin"></i>
                   </Link>
                   <Link to="https://chat.whatsapp.com/KedBa4ZTIPn3e5V4tqIalr" className="whatsapp">

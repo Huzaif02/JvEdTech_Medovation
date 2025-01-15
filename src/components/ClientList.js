@@ -15,15 +15,6 @@ import client07 from "../img/clients/client-7.jpg";
 import client08 from "../img/clients/client-8.jpg";
 import client09 from "../img/clients/client-9.jpg";
 import client10 from "../img/clients/client-10.jpg";
-import client11 from "../img/clients/client-11.jpg";
-import client12 from "../img/clients/client-12.jpg";
-import client13 from "../img/clients/client-13.jpg";
-import client14 from "../img/clients/client-14.jpg";
-import client15 from "../img/clients/client-15.jpg";
-import client16 from "../img/clients/client-16.jpg";
-import client17 from "../img/clients/client-17.jpg";
-import client18 from "../img/clients/client-18.jpg";
-import client19 from "../img/clients/client-19.jpg";
 
 const ClientList = () => {
   return (
@@ -89,6 +80,20 @@ const ClientList = () => {
               <SwiperSlide>
                 <img src={client10} className="img-fluid" alt="" />
               </SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default ClientList;
+
+
+{/* <SwiperSlide>
+                <img src={client10} className="img-fluid" alt="" />
+              </SwiperSlide>
               <SwiperSlide>
                 <img src={client11} className="img-fluid" alt="" />
               </SwiperSlide>
@@ -115,13 +120,4 @@ const ClientList = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <img src={client19} className="img-fluid" alt="" />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default ClientList;
+              </SwiperSlide> */}
