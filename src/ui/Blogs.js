@@ -1,43 +1,43 @@
 // src/pages/Blogs.js
-import React from 'react';
-import { blogs } from '../data/blogsData';
+import React, { useEffect } from 'react';
+import { blogs } from '../data/blogsData'; // Updated data structure
 import BlogCard from '../components/BlogCard';
 
-import AOS from "aos";
-import '../../node_modules/aos/dist/aos.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 import InnerHeaderBanner from '../components/InnerHeaderBanner';
 import InnerHeader from '../components/InnerHeader';
 import Footer from '../components/Footer';
-import abtHeader from '../img/about-header.jpg'
-import { useEffect } from 'react';
+import abtHeader from '../img/about-header.jpg';
 
 const Blogs = () => {
-    useEffect(() => {
-          AOS.init();
-          AOS.refresh();
-        }, []);
-        
-        const images = require.context('../img/team/', false, /\.(png|jpe?g|svg)$/);
-    
-        const imagePaths = images.keys().reduce((paths, path) => {
-          const imageName = path.replace('./', ''); // Remove './' from the key
-          paths[imageName] = images(path); // Add the image to the object
-          return paths;
-        }, {});
+  // Initialize AOS for animations
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Add animation duration
+    AOS.refresh();
+  }, []);
 
   return (
     <>
-        <InnerHeader />
-        <InnerHeaderBanner name={"Our Blogs"} img = {abtHeader}/>
+      {/* Header Section */}
+      <InnerHeader />
+      <InnerHeaderBanner name="Our Blogs" img={abtHeader} />
 
-        <div className="blogs-page">
+      {/* Blogs Section */}
+      <div className="blogs-page">
         <div className="blogs-grid">
-            {blogs.map(blog => (
-            <BlogCard key={blog.id} blog={blog} />
-            ))}
+          {blogs.map((blog) => (
+            <BlogCard 
+              key={blog.id} 
+              blog={blog} 
+              data-aos="fade-up" // Apply AOS animation
+            />
+          ))}
         </div>
-    </div>
-    <Footer/>
+      </div>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };

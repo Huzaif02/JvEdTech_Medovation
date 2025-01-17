@@ -16,14 +16,14 @@ export const testimonial = [
     {
       id: 3,
       name: "Rohit Mehta",
-      cover: require('../img/team/Huzaif.jpeg'),
+      cover: require('../img/testimonial/no-image.jpeg'),
       post: "Director, Mehta Institute of Management Studies, Mumbai",
       desc: "Thanks to JV EdTech, our institution now boasts a cutting-edge digital framework for student engagement and online learning. Their expertise in creating impactful solutions, coupled with their commitment to excellence, has been instrumental in achieving this transformation. The workshops and tools they provided have enhanced the learning environment significantly. It was a privilege to work with such a dedicated team, and their efforts are truly commendable.",
     },
     {
       id: 4,
       name: "Priya Sharma",
-      cover: require('../img/team/Huzaif.jpeg'),
+      cover: require('../img/testimonial/no-image.jpeg'),
       post: "Training Head, Global Skill Academy, Bangalore",
       desc: "The customized training modules by JV EdTech have greatly improved the outcomes for our learners, equipping them with advanced skills and innovative approaches to personal and professional growth. Their meticulous attention to detail and expert guidance made a huge impact on our training sessions. It has been a remarkable experience collaborating with JV EdTech, and their support continues to inspire and empower both trainers and learners.",
     },
