@@ -27,9 +27,9 @@ const Service = () => {
           <div className="container" data-aos="fade-up">
             <div className="section-header">
               <h2>
-                We are a
-                <span style={{ color: "#155bd5" }}> Spearheading</span> in
-                Healthcare domain, by offer Services across Education, Patient Care, Digital Advertisement, medical product import export, etc.
+                We are at the
+                <span style={{ color: "#155bd5" }}> forefront</span> of 
+                the healthcare sector, delivering exceptional services in education, patient care, digital advertising, and medical product import-export, empowering growth and transformation in the industry.
               </h2>
             </div>
 
@@ -63,10 +63,13 @@ const Service = () => {
                   <p className="description">
                     
                   Our Educational Services are designed to empower healthcare professionals with the knowledge and skills they need to excel in a constantly evolving industry. We offer:
-
+                  <p/>
                   <p><span className="fw-bold">Customized Training Programs:</span></p>Tailored to meet the specific needs of healthcare providers, institutions, and organizations.
-                  <p><span className="fw-bold">Workshops and Seminars:</span></p> Focused on the latest trends and advancements in healthcare.
-                  <p><span className="fw-bold">eLearning Modules:</span></p> Interactive, online learning tools for flexible and accessible education.
+                  <p/>
+                  <p><span className="fw-bold">Workshops, Seminars & Webinars:</span></p> Focused on the latest trends and advancements in healthcare.
+                  <p/>
+                  <p><span className="fw-bold">E-Learning Modules:</span></p> Interactive, online learning tools for flexible and accessible education.
+                  <p/>
                   <p><span className="fw-bold">Skill Development:</span></p> Hands-on training in critical areas like patient care, technology integration, and regulatory compliance.
                   
                   </p>
@@ -104,12 +107,16 @@ const Service = () => {
                   <img src={digital} alt="Digital Ads pro Icon" style={{ width: "40px", height: "40px" }} />  
                 </div>
                 <div>
-                  <h4 className="title"> Digital Ads Pro Expertise </h4>
+                  <h4 className="title"> Digital Ad Pro Expertise </h4>
                   <p className="description">
-                  Our Digital Ads Pro Expertise focuses on revolutionizing healthcare marketing by implementing innovative digital strategies. We specialize in:
+                  Our Digital Ad Pro Expertise focuses on revolutionizing healthcare marketing by implementing innovative digital strategies. We specialize in:
+                    <p/>
                     <p><span className="fw-bold">Targeted Campaigns: </span></p>Reaching the right audience with personalized healthcare messaging.
+                    <p/>
                     <p><span className="fw-bold">Social Media Management:</span></p> Engaging patients and stakeholders through impactful social media campaigns.
+                    <p/>
                     <p><span className="fw-bold">Pay-Per-Click (PPC) Advertising: </span></p> Driving traffic and conversions with effective ad placements.
+                    <p/>
                     <p><span className="fw-bold">Content Marketing:</span></p> Creating informative, high-quality content tailored to the healthcare industry.
                   </p>
                   <p className="description">
@@ -139,9 +146,13 @@ const Service = () => {
                   <h4 className="title"> Medi AI Informatics </h4>
                   <p className="description">
                   Our Medi AI Informatics services harness the power of Artificial Intelligence to transform the healthcare landscape. We offer:
+                    <p/>
                     <p><span className="fw-bold">AI-Powered Diagnostics: </span></p>Enabling faster and more accurate disease detection
+                    <p/>
                     <p><span className="fw-bold">Natural Language Processing (NLP):</span></p> Streamlining patient communication and record-keeping.
+                    <p/>
                     <p><span className="fw-bold">Remote Patient Monitoring:  </span></p> Using AI tools to track health metrics and alert caregivers.
+                    <p/>
                     <p><span className="fw-bold">Decision Support Systems: </span></p>  Empowering healthcare providers with data-driven insights for better decision-making.
                   </p>
                   <p className="description">
@@ -178,9 +189,13 @@ const Service = () => {
                   <h4 className="title"> In-Home Wellness </h4>
                   <p className="description">
                     Our In-Home Wellness services redefine patient care by bringing top-notch medical services to the comfort of patients' homes. We provide:  
+                    <p/>
                     <p><span className="fw-bold">Home Health Monitoring: </span></p>Continuous tracking of health metrics with advanced technology.
+                    <p/>
                     <p><span className="fw-bold">Nursing and Caregiver Services:</span></p> Skilled professionals delivering personalized care tailored to individual needs.
+                    <p/>
                     <p><span className="fw-bold">Rehabilitation Therapy:</span></p> Physical, occupational, and speech therapy sessions conducted at home.
+                    <p/>
                     <p><span className="fw-bold">Medication Management:</span></p> Ensuring patients adhere to their prescribed treatments with guidance and support.
                   </p>
                   <p className="description">

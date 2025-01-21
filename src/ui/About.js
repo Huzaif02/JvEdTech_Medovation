@@ -81,8 +81,8 @@ const About = () => {
          image: imagePaths['Sajin.jpeg'],
        },
        {
-         name: 'Mr. Abdul Sheikh',
-         designation: 'Businesss Development Analyst',
+         name: 'Mr. Abdul Wasim Sheikh',
+         designation: 'Analyst - Clinical Education',
          description: 'null',
          linkedin: 'https://www.linkedin.com/in/abdul-sheikh-203522a5/',
          image: imagePaths['Abdul.jpeg'],

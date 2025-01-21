@@ -125,6 +125,11 @@ const InnerHeader = () => {
                     }`}
                   >
                     <li>
+                      <Link to="/events/upcoming-events" onClick={toggleMobileMenu}>
+                        Upcoming Events
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/events/webinars" onClick={toggleMobileMenu}>
                         Webinars
                       </Link>
